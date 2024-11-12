@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error de Inicio de Sesión</title>
+    <link rel="stylesheet" href="login.css"> <!-- Mantiene tu estilo general -->
+    <link rel="icon" type="image/x-icon" href="image/im/TuDeporte.png">
+    <style>
+        /* Fondo de pantalla similar a las otras páginas */
+        body {
+            background-image: url('image/im/fondoinicio.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        /* Caja central de error */
+        .error-container {
+            background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro transparente */
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            width: 300px;
+            color: white;
+        }
+
+        /* Título */
+        .error-container h1 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        /* Mensaje de error */
+        .error-message {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: red;
+        }
+
+        /* Estilo del botón */
+        .back-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Logo central */
+        .logo {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo del enlace para el botón */
+        .back-link {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <!-- Logo de la página -->
+        <img src="image/im/TuDeporte.png" alt="Logo TuDeporte" class="logo">
+        
+        <!-- Título del error -->
+        <h1>Error en el Inicio de Sesión</h1>
+
+        <!-- Mensaje de error recibido -->
+        <p class="error-message">
+            <?php
+            if (isset($_GET['error'])) {
+                echo htmlspecialchars($_GET['error']);
+            }
+            ?>
+        </p>
+
+        <!-- Botón para regresar al inicio de sesión -->
+        <a href="login.html" class="back-link">
+            <button class="back-button">Volver al Inicio de Sesión</button>
+        </a>
+    </div>
+</body>
+</html>

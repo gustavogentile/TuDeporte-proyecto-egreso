@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" type="image/x-icon" href="image/im/TuDeporte.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <img src="image/im/TuDeporte.png" alt="Logo TuDeporte" class="logo">
+            <h1>¡Bienvenido a TuDeporte!</h1>
+
+            <!-- Formulario de login -->
+            <form action="login.php" method="POST">
+                <input type="text" name="username" placeholder="Nombre de Usuario" required>
+                <input type="password" name="password" placeholder="Contraseña" required>
+                <div class="show-password">
+                    <input type="checkbox" onclick="togglePassword()">  Mostrar Contraseña
+                </div>
+                
+                <button type="submit" class="btn-login">Inicia Sesión</button>
+            
+                <div class="create-account">
+                    <a href="registrarse.html">¿No tienes cuenta? Crear Cuenta</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Define la función `togglePassword`, que alternará la visibilidad de la contraseña
+        function togglePassword() {
+            // Selecciona el campo de entrada de tipo "password" con el nombre "password"
+            var passwordInput = document.querySelector('input[name="password"]');
+            
+            // Verifica si el tipo actual del campo de contraseña es "password"
+            if (passwordInput.type === "password") {
+                // Si es de tipo "password", cambia el tipo a "text" para mostrar la contraseña
+                passwordInput.type = "text";
+            } else {
+                // Si no es de tipo "password" (es decir, es "text"), vuelve a cambiarlo a "password" para ocultarla
+                passwordInput.type = "password";
+            }
+        }
+    </script>
+    
+</body>
+</html>

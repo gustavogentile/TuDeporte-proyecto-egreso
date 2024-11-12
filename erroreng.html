@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Error</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" type="image/x-icon" href="image/im/TuDeporte.png">
+    <style>
+        /* Background similar to other pages */
+        body {
+            background-image: url('image/im/fondoinicio.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        /* Error box */
+        .error-container {
+            background-color: rgba(0, 0, 0, 0.8); /* Dark transparent background */
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            width: 300px;
+            color: white;
+        }
+
+        /* Title */
+        .error-container h1 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        /* Error message */
+        .error-message {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: red;
+        }
+
+        /* Button style */
+        .back-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Centered logo */
+        .logo {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+        /* Link style for the button */
+        .back-link {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <!-- Page logo -->
+        <img src="image/im/TuDeporte.png" alt="TuDeporte Logo" class="logo">
+        
+        <!-- Error title -->
+        <h1>Login Error</h1>
+
+        <!-- Display the error message -->
+        <p class="error-message">
+            <?php
+            if (isset($_GET['error'])) {
+                echo htmlspecialchars($_GET['error']);
+            }
+            ?>
+        </p>
+
+        <!-- Button to go back to login -->
+        <a href="logineng.html" class="back-link">
+            <button class="back-button">Back to Login</button>
+        </a>
+    </div>
+</body>
+</html>

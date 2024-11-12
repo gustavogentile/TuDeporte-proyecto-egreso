@@ -1,0 +1,242 @@
+/* Estilos para el cuerpo de la página, incluyendo el fondo y la configuración de flexbox */
+body {
+    font-family: Arial, sans-serif; /* Establece la fuente predeterminada */
+    background-image: url('image/im/fondoinicio.jpg'); /* Define una imagen de fondo */
+    background-size: cover; /* Asegura que la imagen de fondo cubra toda la pantalla */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    height: 100%; /* Asegura que el fondo cubra toda la pantalla */
+    opacity: 80%; /* Reduce la opacidad de todo el contenido */
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 0; /* Elimina el relleno por defecto */
+    display: flex; /* Utiliza flexbox para alinear el contenido dentro del body */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+}
+
+.dropdown .dropdown-content {
+    display: none; /* Oculta el contenido del menú desplegable por defecto */
+    position: absolute; /* Posiciona el contenido del menú de manera absoluta, en relación a su contenedor */
+    background-color: #333; /* Establece el fondo del contenido del menú en color oscuro */
+    border-radius: 20px; /* Redondea las esquinas del menú desplegable */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Aplica una sombra para darle un efecto de elevación */
+    z-index: 100; /* Asegura que el menú desplegable esté por encima de otros elementos */
+  }
+  
+  /* Muestra el contenido del menú desplegable cuando se pasa el cursor sobre el contenedor */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown .dropdown-content a {
+    color: white; /* Establece el color del texto de los enlaces en blanco */
+    padding: 12px; /* Añade un padding alrededor de cada enlace para mayor espacio clickable */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    border-radius: 15px; /* Redondea las esquinas de los enlaces dentro del menú desplegable */
+    display: block; /* Asegura que cada enlace ocupe una línea completa */
+  }
+  
+  .dropdown .dropdown-content a:hover {
+    background-color: #3a5a40; /* Cambia el fondo del enlace al pasar el cursor sobre él */
+    color: #fefae0; /* Cambia el color del texto al pasar el cursor sobre él */
+  }
+
+/* Estilos para el logotipo del menú */
+.logo {
+    display: flex; /* Utiliza flexbox para alinear el logo */
+    align-items: center; /* Centra verticalmente el contenido del logo */
+}
+
+/* Estilos para el nombre del sitio en el menú superior */
+.site-name {
+    color: white; /* Establece el color del texto en blanco */
+    font-size: 24px; /* Ajusta el tamaño del texto */
+    margin-left: 10px; /* Añade espacio entre el logo y el nombre del sitio */
+    font-family: cursive; /* Utiliza una fuente cursiva */
+}
+
+/* Estilos para el encabezado del menú superior */
+header {
+    opacity: 90%;
+    background-color: #344e41; /* Establece un color de fondo oscuro para el encabezado */
+    position: fixed; /* Fija el encabezado en la parte superior de la página */
+    width: 100%; /* Asegura que el encabezado ocupe todo el ancho de la pantalla */
+    top: 0; /* Posiciona el encabezado en la parte superior */
+    left: 0; 
+    z-index: 1000; /* Asegura que el encabezado quede por encima del contenido */
+    box-shadow: 0 2px 0 rgb(255, 255, 255); /* Sombra suave para el dropdown */
+}
+
+/* Estilos para la barra de navegación dentro del encabezado */
+.navbar {
+    display: flex; /* Utiliza flexbox para alinear el contenido del navbar */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    align-items: center; /* Centra verticalmente los elementos del navbar */
+}
+
+/* Estilos para el logotipo dentro del encabezado */
+.logo img {
+    height: 70px; /* Ajusta la altura del logo */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    position: relative;
+  }
+  
+  /* Animación de la barra debajo del enlace */
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    left: 50%;
+    bottom: -3px;
+    transition: all 1.1s ease;
+    border-radius: 200px;
+  }
+  
+  .nav-links a:hover::after {
+    width: 100%;
+    left: 0;
+  }
+  
+  .nav-links a:hover {
+    color: #A9DFBF;
+  }
+  
+
+/* Estilos para el contenedor principal  de las comidas el grande*/
+.container {
+  background-color: #588157; /* Establece el color de fondo del contenedor */
+    padding: 20px; /* Añade un relleno interno */
+    border-radius: 10px; /* Redondea los bordes del contenedor */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Añade una sombra ligera */
+    max-width: 800px; /* Limita el ancho máximo del contenedor */
+    width: 100%; /* Hace que el contenedor ocupe el 100% del ancho disponible */
+    margin-top: 80px; /* Este valor debe coincidir con la altura del menú */
+   
+
+}
+
+
+/* Estilos para el encabezado (título principal) */
+h1 {
+    text-align: center; /* Centra el texto del título */
+    color:  #A9DFBF; /* Establece el color del título */
+}
+
+/* Estilos para el subtítulo */
+h2 {
+  color: #A9DFBF; /* Establece el color de los subtítulos (h2) */
+}
+
+h3 {
+  color: #A9DFBF; /* Establece el color de los subtítulos (h2) */
+}
+
+p {
+  color: #F0F0F0; /* Establece el color del texto en párrafos */
+}
+
+
+/* Estilos para las secciones del contenido */
+.section {
+    margin: 20px 0; /* Añade un margen vertical entre las secciones */
+}
+
+/* Estilos para las listas */
+ul {
+    padding-left: 20px; /* Añade un relleno a la izquierda de las listas */
+}
+
+/* Estilos para los elementos de la lista */
+ul li {
+  color: #F0F0F0; /* Establece el color del texto en listas */
+    margin-bottom: 5px; /* Añade un margen inferior entre los elementos de la lista */
+}
+
+/* Estilos para las secciones con pasos numerados */
+.steps {
+    margin-top: 20px; /* Añade un margen superior */
+}
+
+/* Estilos para las listas numeradas dentro de los pasos */
+.steps ol {
+    padding-left: 20px; /* Añade un relleno a la izquierda */
+}
+
+/* Estilos para los elementos de la lista numerada */
+.steps ol li {
+  color: #F0F0F0; /* Establece el color del texto en listas */
+    margin-bottom: 10px; /* Añade un margen inferior entre los elementos numerados */
+}
+
+
+/* Estilo para los iconos */
+.nav-links a i {
+  margin-right: 8px; /* Espacio entre el icono y el texto */
+  font-size: 1.2em;
+}
+
+/* Estilo para los enlaces del navbar */
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  position: relative;
+  transition: all 0.3s ease; /* Animación suave */
+  border-radius: 15px; /* Bordes redondeados */
+}
+
+/* Sombra y cambio de color al hacer hover */
+.nav-links a:hover {
+  color: #A9DFBF;
+  background-color: #3a5a40; /* Fondo al hacer hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+
+/* Dropdown */
+.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #344e41;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown .dropdown-content a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 8px;
+  display: block;
+}
+
+.dropdown .dropdown-content a:hover {
+  background-color: #3a5a40;
+  color: #fefae0;
+}
+

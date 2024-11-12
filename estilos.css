@@ -1,0 +1,240 @@
+body {
+  font-family: Arial, sans-serif; /* Establece la fuente del texto como Arial, con sans-serif como alternativa */
+  margin: 0; /* Elimina el margen predeterminado de la página */
+  padding: 0; /* Elimina el padding (espaciado interior) predeterminado de la página */
+  background-image: url('image/im/fondoinicio.jpg'); /* Asigna una imagen de fondo al cuerpo de la página */
+  background-size: cover; /* Ajusta la imagen para que cubra todo el fondo, sin estirarse ni repetirse */
+  background-position: center; /* Centra la imagen de fondo en la pantalla */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita si la pantalla es más grande que la imagen */
+  height: 100%; /* Asegura que el fondo cubra toda la altura de la pantalla */
+  opacity: 85%; /* Aplica una opacidad del 85% al fondo, haciéndolo un poco translúcido */
+}
+
+/* Oculta la barra de desplazamiento en navegadores basados en WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Para navegadores que no soportan el código anterior */
+.carousel {
+  scrollbar-width: none; /* Oculta la barra de desplazamiento en Firefox */
+  -ms-overflow-style: none; /* Oculta la barra de desplazamiento en Internet Explorer y Edge */
+}
+
+.dropdown .dropdown-content {
+  display: none; /* Oculta el contenido del menú desplegable por defecto */
+  position: absolute; /* Posiciona el contenido del menú de manera absoluta, en relación a su contenedor */
+  background-color: #333; /* Establece el fondo del contenido del menú en color oscuro */
+  border-radius: 20px; /* Redondea las esquinas del menú desplegable */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Aplica una sombra para darle un efecto de elevación */
+  z-index: 100; /* Asegura que el menú desplegable esté por encima de otros elementos */
+}
+
+/* Muestra el contenido del menú desplegable cuando se pasa el cursor sobre el contenedor */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown .dropdown-content a {
+  color: white; /* Establece el color del texto de los enlaces en blanco */
+  padding: 12px; /* Añade un padding alrededor de cada enlace para mayor espacio clickable */
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  border-radius: 15px; /* Redondea las esquinas de los enlaces dentro del menú desplegable */
+  display: block; /* Asegura que cada enlace ocupe una línea completa */
+}
+
+.dropdown .dropdown-content a:hover {
+  background-color: #3a5a40; /* Cambia el fondo del enlace al pasar el cursor sobre él */
+  color: #fefae0; /* Cambia el color del texto al pasar el cursor sobre él */
+}
+
+/* Estilos para el logo y el nombre del sitio */
+.logo {
+  display: flex; /* Utiliza un diseño de flexbox para alinear el logo y el nombre */
+  align-items: center; /* Alinea verticalmente el logo y el nombre en el centro */
+}
+
+.site-name {
+  color: white; /* Establece el color del texto del nombre del sitio en blanco */
+  font-size: 24px; /* Ajusta el tamaño de la fuente del nombre del sitio */
+  margin-left: 10px; /* Añade espacio entre el logo y el nombre del sitio */
+  font-family: cursive; /* Aplica una fuente cursiva al nombre del sitio */
+}
+
+header {
+  opacity: 95%;
+  background-color: #344e41; /* Establece un color de fondo verde oscuro para el header */
+  position: fixed; /* Fija el header en la parte superior de la página, incluso al hacer scroll */
+  width: 100%; /* Asegura que el header ocupe todo el ancho de la página */
+  top: 0; /* Posiciona el header en la parte superior de la ventana */
+  left: 0;
+  z-index: 1000; /* Coloca el header por encima de otros elementos en la página */
+  box-shadow: 0 2px 0 rgb(255, 255, 255); /* Sombra suave para el dropdown */
+}
+
+.navbar {
+  display: flex; /* Utiliza un diseño de flexbox para distribuir el contenido dentro de la barra de navegación */
+  justify-content: space-between; /* Distribuye los elementos en los extremos de la barra de navegación */
+  align-items: center; /* Alinea verticalmente los elementos en el centro */
+}
+
+.logo img {
+  height: 70px; /* Ajusta la altura del logo */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  position: relative;
+}
+
+
+
+.nav-links a:hover {
+  color: #A9DFBF;
+}
+
+
+p{
+  margin: 10px; /* Establece un margen de 10px alrededor de los párrafos */
+  font-size: 18px; /* Ajusta el tamaño de la fuente de los párrafos */
+}
+
+h1{
+  color: white; /* Establece el color del texto de los encabezados en blanco */
+  font-size: 24px; /* Ajusta el tamaño de la fuente de los encabezados */
+  margin-left: 10px; /* Añade un espacio a la izquierda del encabezado */
+  font-family: Georgia, 'Times New Roman', Times, serif; /* Aplica una fuente serif al encabezado */
+  text-align: center; /* Centra el texto del encabezado */
+  justify-content: center; /* Asegura que el encabezado esté centrado */
+}
+
+h2 {
+  text-align: center; /* Centra el texto del subtítulo */
+  justify-content: center; /* Justifica el contenido del subtítulo en el centro */
+  color: #fefae0; /* Establece el color del texto del subtítulo */
+}
+
+/* Estilo global para asegurar que el padding y el margin se apliquen de manera uniforme */
+* {
+  box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total de los elementos */
+  margin: 0; /* Elimina el margen predeterminado de todos los elementos */
+  padding: 0; /* Elimina el padding predeterminado de todos los elementos */
+}
+
+.carousel {
+  display: flex; /* Utiliza flexbox para alinear los elementos del carrusel */
+  justify-content: center; /* Centra horizontalmente los elementos del carrusel */
+  align-items: center; /* Alinea verticalmente los elementos del carrusel */
+  gap: 20px; /* Añade un espacio entre cada elemento del carrusel */
+  overflow-x: auto; /* Habilita el desplazamiento horizontal dentro del carrusel */
+  padding: 0px; /* Elimina el padding interno del carrusel */
+}
+
+.carousel-item {
+  border-radius: 50%; /* Redondea los bordes de cada elemento del carrusel para que sean circulares */
+  padding: 20px; /* Añade un padding interno a cada elemento del carrusel */
+  text-align: center; /* Centra el texto dentro de cada elemento del carrusel */
+  color: #fff; /* Establece el color del texto dentro de los elementos del carrusel en blanco */
+  transition: transform 0.3s; /* Añade una transición suave al escalar el elemento */
+}
+
+.carousel-item img {
+  width: 140px; /* Ajusta el ancho de las imágenes dentro del carrusel */
+  height: 140px; /* Ajusta la altura de las imágenes dentro del carrusel */
+  border-radius: 50%; /* Hace que las imágenes sean circulares */
+  object-fit: cover; /* Asegura que las imágenes mantengan sus proporciones y llenen el espacio disponible */
+}
+
+.carousel-item p {
+  margin-top: 10px; /* Añade un margen en la parte superior del texto en el carrusel */
+  font-size: 14px; /* Ajusta el tamaño de la fuente del texto dentro del carrusel */
+}
+
+.carousel-item:hover {
+  transform: scale(1.1); /* Escala el elemento un 10% al pasar el cursor sobre él */
+  cursor: pointer; /* Cambia el cursor a una mano para indicar que es interactivo */
+}
+
+/* Estilo para los iconos */
+.nav-links a i {
+  margin-right: 8px; /* Espacio entre el icono y el texto */
+  font-size: 1.2em;
+}
+
+/* Estilo para los enlaces del navbar */
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  position: relative;
+  transition: all 0.3s ease; /* Animación suave */
+  border-radius: 15px; /* Bordes redondeados */
+}
+
+/* Sombra y cambio de color al hacer hover */
+.nav-links a:hover {
+  color: #A9DFBF;
+  background-color: #3a5a40; /* Fondo al hacer hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+/* Barra de animación debajo del enlace */
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  left: 50%;
+  bottom: -5px;
+  transition: all 0.4s ease;
+  border-radius: 200px;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Dropdown */
+.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #344e41;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown .dropdown-content a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 8px;
+  display: block;
+}
+
+.dropdown .dropdown-content a:hover {
+  background-color: #3a5a40;
+  color: #fefae0;
+}
+

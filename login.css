@@ -1,0 +1,106 @@
+* {
+    margin: 0; /* Quita el margen externo de todos los elementos para evitar espacios innecesarios */
+    padding: 0; /* Quita el relleno interno de todos los elementos */
+    box-sizing: border-box; /* Incluye bordes y padding dentro del ancho y alto de los elementos */
+    font-family: 'Poppins', sans-serif; /* Aplica la fuente 'Poppins' a todo el texto de la página */
+}
+
+body {
+    background-image: url('image/im/fondoinicio.jpg'); /* Agrega una imagen de fondo */
+    background-size: cover; /* Hace que la imagen de fondo cubra toda la pantalla */
+    background-position: center; /* Centra la imagen de fondo en la pantalla */
+    height: 100vh; /* Establece el alto del cuerpo al 100% del alto de la ventana */
+    display: flex; /* Utiliza flexbox para alinear los elementos hijos */
+    justify-content: center; /* Centra los elementos hijos horizontalmente */
+    align-items: center; /* Centra los elementos hijos verticalmente */
+}
+
+.login-container {
+    display: flex; /* Utiliza flexbox para organizar el contenido */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    width: 100%; /* Ocupa el 100% del ancho disponible */
+    height: 100%; /* Ocupa el 100% del alto disponible */
+}
+
+.login-box {
+    background-color: rgba(0, 0, 0, 0.75); /* Fondo semitransparente negro para la caja de login */
+    padding: 40px; /* Espacio interno alrededor del contenido */
+    border-radius: 20px; /* Bordes redondeados en la caja */
+    width: 350px; /* Ancho fijo de la caja de login */
+    text-align: center; /* Centra el texto dentro de la caja */
+    color: white; /* Color del texto en blanco */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra debajo de la caja para efecto de profundidad */
+    transition: all 0.3s ease; /* Efecto de transición suave en todos los cambios */
+}
+
+
+
+.logo {
+    width: 100px; /* Ancho fijo para la imagen del logo */
+    margin-bottom: 20px; /* Espacio debajo del logo */
+    border-radius: 50%; /* Hace que el logo sea redondeado */
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%; /* Hace que el campo ocupe todo el ancho de la caja */
+    padding: 12px; /* Espacio interno en los campos de texto */
+    margin: 12px 0; /* Espacio externo entre los campos */
+    border-radius: 15px; /* Bordes redondeados en los campos */
+    border: none; /* Elimina el borde del campo */
+    outline: none; /* Evita el borde resaltado al hacer clic */
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente en los campos */
+    color: white; /* Color del texto en blanco */
+    font-size: 16px; /* Tamaño del texto */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2); /* Sombra interna en los campos */
+    transition: background-color 0.3s ease; /* Efecto de transición suave al cambiar el color de fondo */
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo un poco más claro al hacer clic en el campo */
+}
+
+input::placeholder {
+    color: #ccc; /* Color gris claro para el texto de marcador (placeholder) */
+}
+
+.btn-login {
+    width: 100%; /* Ocupa todo el ancho de la caja de login */
+    padding: 12px; /* Espacio interno del botón */
+    background-color: #28a745; /* Color de fondo del botón */
+    color: white; /* Color del texto en blanco */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 25px; /* Bordes redondeados en el botón */
+    margin-top: 20px; /* Espacio encima del botón */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
+    font-size: 16px; /* Tamaño del texto en el botón */
+    transition: all 0.3s ease; /* Transición suave para cambios de estilo */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra del botón para efecto de profundidad */
+}
+
+.btn-login:hover {
+    background-color: #218838; /* Cambia el color de fondo del botón al pasar el mouse */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Aumenta la sombra al pasar el mouse */
+    transform: scale(1.05); /* Agranda ligeramente el botón al pasar el mouse */
+}
+
+.show-password {
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin-top: 10px; /* Espacio superior */
+}
+
+.create-account {
+    margin-top: 15px; /* Espacio superior entre el texto y otros elementos */
+}
+
+.create-account a {
+    color: #17a2b8; /* Color del enlace */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    font-weight: bold; /* Hace que el texto del enlace sea más grueso */
+    font-size: 0.9em; /* Reduce un poco el tamaño del texto */
+}
+
+/* le pone el subrayado azul al crea tu cuenta*/
+.create-account a:hover {
+    text-decoration: underline; /* Agrega subrayado al enlace al pasar el mouse */
+}

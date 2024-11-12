@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" type="image/x-icon" href="image/im/TuDeporte.png">
+</head>
+
+<body>
+ <!-- Show error message if it exists -->
+ <?php if (isset($_GET['error'])): ?>
+ <p style="color: red;"><?php echo htmlspecialchars($_GET['error']); ?></p>
+ <?php endif; ?>
+
+<div class="login-container">
+    <div class="login-box">
+        <img src="image/im/TuDeporte.png" alt="Logo TuDeporte" class="logo">
+        <h1>Welcome to TuDeporte!</h1>
+
+        <!-- Login form -->
+        <form action="logineng.php" method="POST">
+            <input type="text" name="username" placeholder="Username" required>
+            <br>
+            <br>
+            <input type="password" name="password" placeholder="Password" required>
+            <br>
+            <br>
+            <div class="show-password" style="color: white;">
+                <input type="checkbox" onclick="togglePassword()"> Show Password
+            </div>
+            <br>
+            
+            <button type="submit" class="btn-login">Login</button>
+
+            <div class="create-account">
+                <a href="registrarseeng.html">Don't have an account? Create Account</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    function togglePassword() {
+        var passwordInput = document.querySelector('input[name="password"]');
+        if (passwordInput.type === "password") {
+            passwordInput.type = "text";
+        } else {
+            passwordInput.type = "password";
+        }
+    }
+</script>
+</body>
+</html>

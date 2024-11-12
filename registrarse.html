@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="registrarse.css">
+ 
+    <link rel="icon" type="image/x-icon" href="image/im/TuDeporte.png">
+</head>
+<body>
+    <div class="login-container">
+        <img src="image/im/TuDeporte.png" alt="Logo TuDeporte" class="logo">
+        <h1>¡Regístrate en TuDeporte!</h1>
+        <form id="registerForm" action="register.php" method="POST">
+            <!-- Inputs con placeholders -->
+            <input type="text" id="username" name="username" placeholder="Nombre De Usuario" required>
+            <br>
+            <br>
+            <input type="password" id="password" name="password" placeholder="Contraseña" required>
+            <br>
+            <br>
+            <div class="show-password" style="color: white;">
+                <input type="checkbox" onclick="togglePassword()">  Mostrar Contraseña
+            </div>
+            <br>
+            <button type="submit">Registrarse</button>
+            <div class="error-message" id="error-message">Por favor, completa todos los campos correctamente.</div>
+        </form>
+        <br>
+        <a href="login.html">¿Ya tienes cuenta? Inicia Sesión</a>
+    </div>
+
+<script>
+    function togglePassword() {
+        var passwordInput = document.querySelector('input[name="password"]');
+        if (passwordInput.type === "password") {
+            passwordInput.type = "text";
+        } else {
+            passwordInput.type = "password";
+        }
+    }
+</script>
+
+    <script src="registro.js"></script> <!-- Vincula tu archivo JS -->
+</body>
+</html>

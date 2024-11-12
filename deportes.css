@@ -1,0 +1,214 @@
+body {
+  font-family: Arial, sans-serif; /* Define la fuente de todo el contenido de la página */
+  margin: 0; /* Elimina el margen por defecto del cuerpo */
+  padding: 0; /* Elimina el padding por defecto del cuerpo */
+  background-image: url('image/im/fondoinicio.jpg'); /* Establece una imagen de fondo para el cuerpo */
+  background-size: cover; /* Hace que la imagen cubra todo el fondo sin distorsionarse */
+  background-position: center; /* Centra la imagen de fondo */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  height: 100%; /* Asegura que el fondo cubra toda la pantalla */
+  opacity: 85%; /* Aplica un efecto de transparencia del 85% al contenido */
+}
+
+* {
+  box-sizing: border-box; /* Hace que el padding y el borde se incluyan en las dimensiones totales de los elementos */
+  margin: 0; /* Elimina el margen por defecto */
+  padding: 0; /* Elimina el padding por defecto */
+}
+
+
+.dropdown .dropdown-content {
+  display: none; /* Oculta el contenido del menú desplegable por defecto */
+  position: absolute; /* Posiciona el contenido del menú de manera absoluta, en relación a su contenedor */
+  background-color: #333; /* Establece el fondo del contenido del menú en color oscuro */
+  border-radius: 20px; /* Redondea las esquinas del menú desplegable */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Aplica una sombra para darle un efecto de elevación */
+  z-index: 100; /* Asegura que el menú desplegable esté por encima de otros elementos */
+}
+
+/* Muestra el contenido del menú desplegable cuando se pasa el cursor sobre el contenedor */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown .dropdown-content a {
+  color: white; /* Establece el color del texto de los enlaces en blanco */
+  padding: 12px; /* Añade un padding alrededor de cada enlace para mayor espacio clickable */
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  border-radius: 15px; /* Redondea las esquinas de los enlaces dentro del menú desplegable */
+  display: block; /* Asegura que cada enlace ocupe una línea completa */
+}
+
+.dropdown .dropdown-content a:hover {
+  background-color: #3a5a40; /* Cambia el fondo del enlace al pasar el cursor sobre él */
+  color: #fefae0; /* Cambia el color del texto al pasar el cursor sobre él */
+}
+
+/* Logo en el encabezado */
+.logo {
+  display: flex; /* Hace que el logo y el texto estén alineados en fila */
+  align-items: center; /* Alinea verticalmente el logo y el texto */
+}
+
+.logo img {
+  height: 70px; /* Ajusta la altura del logo */
+}
+
+header {
+  opacity: 90%;
+  background-color: #344e41; /* Establece el color de fondo del encabezado */
+  position: fixed; /* Fija el encabezado en la parte superior de la página */
+  width: 100%; /* Hace que el encabezado ocupe todo el ancho de la página */
+  top: 0; /* Posiciona el encabezado en la parte superior de la pantalla */
+  left: 0; /* Alinea el encabezado con el borde izquierdo de la pantalla */
+  z-index: 1000; /* Asegura que el encabezado quede por encima de otros elementos */
+  box-shadow: 0 2px 0 rgb(255, 255, 255); /* Sombra suave para el dropdown */
+}
+
+.site-name {
+  color: white; /* Establece el color del texto en blanco */
+  font-size: 24px; /* Establece el tamaño de la fuente del nombre del sitio */
+  margin-left: 10px; /* Añade espacio entre el logo y el nombre del sitio */
+  font-family: cursive; /* Establece la fuente del nombre del sitio en cursiva */
+}
+
+.navbar {
+  display: flex; /* Hace que los elementos de la barra de navegación estén alineados en fila */
+  justify-content: space-between; /* Distribuye los elementos de la barra de navegación equitativamente */
+  align-items: center; /* Alinea verticalmente los elementos de la barra de navegación */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  position: relative;
+}
+
+
+
+.nav-links a:hover {
+  color: #A9DFBF;
+}
+
+
+
+
+/* Estilo para los iconos */
+.nav-links a i {
+  margin-right: 8px; /* Espacio entre el icono y el texto */
+  font-size: 1.2em;
+}
+
+/* Estilo para los enlaces del navbar */
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  position: relative;
+  transition: all 0.3s ease; /* Animación suave */
+  border-radius: 15px; /* Bordes redondeados */
+}
+
+/* Sombra y cambio de color al hacer hover */
+.nav-links a:hover {
+  color: #A9DFBF;
+  background-color: #3a5a40; /* Fondo al hacer hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+
+
+/* Dropdown lo del idioma */
+.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #344e41;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown .dropdown-content a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 8px;
+  display: block;
+}
+
+.dropdown .dropdown-content a:hover {
+  background-color: #3a5a40;
+  color: #fefae0;
+}
+
+
+ /* contenedor grande  */
+.container {
+  margin-top: 100px; /* Ajusta este valor según el tamaño de tu encabezado */
+  background-color: #588157; /* Fondo semitransparente verde oscuro */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 40px;
+  max-width: 900px; /* Ancho máximo del contenedor */
+  width: 100%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+  margin: 20px auto; /* Centramos el contenedor */
+}
+
+h1 {
+  font-size: 36px; /* Tamaño de la fuente del título */
+  color: #A9DFBF; /* Color del texto verde claro */
+  text-align: center; /* Centra el texto */
+  margin-bottom: 20px; /* Añade espacio debajo del título */
+}
+
+h2{
+  font-size: 36px; /* Tamaño de la fuente del título */
+  color: #A9DFBF; /* Color del texto verde claro */
+  text-align: center; /* Centra el texto */
+  margin-bottom: 20px; /* Añade espacio debajo del título */
+}
+p {
+  font-size: 18px; /* Tamaño de la fuente de los párrafos */
+  color: white; /* Color del texto */
+  line-height: 1.6; /* Mejora la legibilidad */
+  margin-bottom: 20px; /* Espacio entre párrafos */
+}
+ul{
+  color: white; /* Color del texto */
+  line-height: 1.6; /* Mejora la legibilidad */
+  margin-bottom: 20px; /* Espacio entre párrafos */
+}
+
+.centered-text {
+  text-align: center; /* Centra el texto */
+  background-color:#3a5a40;/* Fondo semitransparente verde oscuro */
+  padding: 20px; /* Relleno interno */
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  margin-bottom: 20px; /* Espacio debajo del texto centrado */
+}
+
+h3 {
+  font-size: 24px; /* Tamaño de la fuente de los subtítulos */
+  color: #A9DFBF; /* Color verde claro */
+  margin-top: 20px; /* Margen superior de los subtítulos */
+}
+

@@ -1,0 +1,113 @@
+/* Estilos Generales */
+* {
+    margin: 0; /* Elimina el margen predeterminado de todos los elementos */
+    padding: 0; /* Elimina el relleno predeterminado de todos los elementos */
+    box-sizing: border-box; /* Incluye el relleno y el borde dentro del ancho y alto del elemento */
+    font-family: 'Poppins', sans-serif; /* Establece la fuente 'Poppins' para todo el documento */
+}
+
+/* Estilos del Cuerpo */
+body {
+    background-image: url('image/im/fondoinicio.jpg'); /* Establece una imagen de fondo */
+    background-size: cover; /* Asegura que la imagen de fondo cubra toda el área visible */
+    background-position: center; /* Centra la imagen de fondo */
+    height: 100vh; /* Define la altura del cuerpo como el 100% de la altura de la ventana */
+    display: flex; /* Activa flexbox para centrar el contenido */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+}
+
+/* Contenedor de Inicio de Sesión */
+.login-container {
+    background-color: rgba(0, 0, 0, 0.75); /* Fondo oscuro semi-transparente */
+    padding: 40px; /* Relleno interno del contenedor */
+    border-radius: 20px; /* Bordes redondeados */
+    width: 350px; /* Ancho fijo del contenedor */
+    text-align: center; /* Centra el texto dentro del contenedor */
+    color: white; /* Texto en blanco */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra alrededor del contenedor */
+    transition: all 0.3s ease; /* Suavidad en las transiciones */
+}
+
+.login-container:hover {
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.5); /* Aumenta la sombra al pasar el mouse */
+}
+
+/* Logo */
+.logo {
+    width: 100px; /* Ancho del logo */
+    margin-bottom: 20px; /* Espacio debajo del logo */
+    border-radius: 50%; /* Hace el logo redondeado */
+}
+
+/* Campos de Texto y Contraseña */
+input[type="text"], input[type="password"] {
+    width: 100%; /* Ancho completo del contenedor padre */
+    padding: 12px; /* Relleno interno */
+    margin: 12px 0; /* Margen vertical */
+    border-radius: 15px; /* Bordes redondeados */
+    border: none; /* Sin borde visible */
+    outline: none; /* Elimina el borde que aparece al enfocar */
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
+    color: white; /* Texto en blanco */
+    font-size: 16px; /* Tamaño de la fuente */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2); /* Sombra interna */
+    transition: background-color 0.3s ease; /* Suavidad en la transición del color de fondo */
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo más claro al enfocar */
+}
+
+input::placeholder {
+    color: #ccc; /* Color del texto de marcador de posición */
+}
+
+/* Botón de Envío */
+button {
+    width: 100%; /* Ancho completo del contenedor padre */
+    padding: 12px; /* Relleno interno */
+    background-color: #28a745; /* Color de fondo verde */
+    color: white; /* Texto en blanco */
+    border: none; /* Sin borde visible */
+    border-radius: 25px; /* Bordes redondeados */
+    margin-top: 20px; /* Margen superior */
+    cursor: pointer; /* Cambia el cursor a "mano" */
+    font-size: 16px; /* Tamaño de la fuente */
+    transition: all 0.3s ease; /* Suavidad en la transición */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra alrededor del botón */
+}
+
+button:hover {
+    background-color: #218838; /* Color de fondo más oscuro al pasar el mouse */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el mouse */
+}
+
+/* Mostrar Contraseña */
+.show-password {
+    text-align: left; /* Alineación del texto a la izquierda */
+    margin-top: 10px; /* Margen superior */
+    color: white; /* Texto en blanco */
+}
+
+/* Enlaces */
+a {
+    color: #17a2b8; /* Color azul claro */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Texto en negrita */
+    font-size: 0.9em; /* Tamaño de fuente más pequeño */
+    display: block; /* Muestra el enlace como bloque */
+    margin-top: 15px; /* Margen superior */
+}
+
+a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+/* Mensajes de Error */
+.error-message {
+    color: #ff4c4c; /* Color rojo */
+    margin-top: 10px; /* Margen superior */
+    display: none; /* Oculto por defecto */
+}
